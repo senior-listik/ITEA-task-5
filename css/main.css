@@ -1,0 +1,80 @@
+*,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    border: 1px solid rgb(10, 141, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #000;
+}
+.form__item{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+.form__itemText {
+    text-align: right;
+    width: 150px;
+    line-height: 1.6;
+}
+.form__inp{
+    height: 25px;
+    width: 150px;
+    background: white;
+    margin-left: 15px;
+    padding-left: 5px;
+    border: 1px solid rgb(10, 141, 255);
+}
+.form__inpIcon{
+    position: absolute;
+    right: 267px;
+    width: 16px;
+    height: 17px;
+    background: #73b5d3;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: none;
+}
+.form__inp:focus {
+    outline: none;
+    border: 2px solid #228dff;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.form__item textarea {
+    width: 390px;
+    height: 150px;
+    resize: none;
+    padding: 5px;
+}
+.small{
+    width: 80px;
+}
+.form__captcha{
+    width: 150px;
+    height: 50px;
+    margin-left: 15px;
+    border: 1px solid rgb(10, 141, 255);
+    background: url(../img/captcha.jpg) center/cover no-repeat;
+}
+.form__link {
+    color: inherit;
+    line-height: 2.0;
+    margin-left: 10px;
+}
+.form__btn {
+    margin-left: 15px;
+    border: 1px solid rgb(19, 82, 255);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

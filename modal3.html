@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/modal3.css">
+    <style>
+        .nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    
+        .nav__btn {
+            padding: 5px;
+            background: rgb(150, 150, 150);
+            background: linear-gradient(0deg, rgba(150, 150, 150, 1) 0%, rgba(231, 231, 231, 1) 40%, rgba(144, 144, 144, 1) 100%, rgba(23, 154, 213, 1) 100%);
+            border-radius: 10px;
+            border: 1px solid;
+            color: rgb(20, 84, 133);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    
+        .nav__btn:hover {
+            box-shadow: 1px 1px 15px 1px rgba(130, 130, 130, 0.63);
+        }
+    </style>
+    <title>Task 5</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="./index.html" class="nav__btn">Modal 1</a>
+        <a href="./modal2.html" class="nav__btn">Modal 2</a>
+        <a href="./modal3.html" class="nav__btn">Modal 3</a>
+        <a href="./modal4.html" class="nav__btn">Modal 4</a>
+    </div>
+    <div class="container">
+        <h1 class="header">CONTACT FORM</h1>
+        
+        <form action="" class="form">
+            <hr class="form__line">
+            <div class="form__item">
+                <div class="form__itemText">Full name *</div>
+                <input type="text" class="form__itemInp" required></input>
+            </div>
+            <hr class="form__line">
+            <div class="form__item">
+                <div class="form__itemText">Email *</div>
+                <input type="email" class="form__itemInp" required></input>
+            </div>
+            <hr class="form__line">
+            <div class="form__item">
+                <div class="form__itemText">Subject *</div>
+                <input type="text" class="form__itemInp" required></input>
+            </div>
+            <hr class="form__line">
+            <div class="form__item">
+                <div class="form__itemText">Message *</div>
+                <textarea class="form__itemInp textarea" required></textarea>
+            </div>
+            <div class="form__item">
+                <input class="form__btn" type="submit" value="Submit Form">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
