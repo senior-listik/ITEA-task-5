@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./libs/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./css/main.css">
+<style>
+    .nav {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav__btn {
+        padding: 5px;
+        background: rgb(150, 150, 150);
+        background: linear-gradient(0deg, rgba(150, 150, 150, 1) 0%, rgba(231, 231, 231, 1) 40%, rgba(144, 144, 144, 1) 100%, rgba(23, 154, 213, 1) 100%);
+        border-radius: 10px;
+        border: 1px solid;
+        color: rgb(20, 84, 133);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .nav__btn:hover {
+        box-shadow: 1px 1px 15px 1px rgba(130, 130, 130, 0.63);
+    }
+</style>
+    <title>Task 5</title>
 </head>
 <body>
-    
+    <div class="nav">
+        <a href="./index.html" class="nav__btn">Modal 1</a>
+        <a href="./modal2.html" class="nav__btn">Modal 2</a>
+        <a href="./modal3.html" class="nav__btn">Modal 3</a>
+        <a href="./modal4.html" class="nav__btn">Modal 4</a>
+    </div>
+    <div class="container">
+        <form action="" class="form">
+            <div class="form__item">
+                <div class="form__itemText">Твоє Ім`я</div>
+                <input type="text" class="form__inp">
+            </div>
+            <div class="form__item">
+                <div class="form__itemText">Твій email</div>
+                <input type="email" class="form__inp">
+            </div>
+            <div class="form__item">
+                <div class="form__itemText">Тема повідомлення</div>
+                <select class="form__inp">
+                    <option value="">(Select one)</option>
+                    <option value="1">More actions</option>
+                    <option value="2">More actions</option>
+                </select>
+                <div class="form__inpIcon">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+            <div class="form__item">
+                <div class="form__itemText">Текст*</div>
+                <textarea class="form__inp" rows="50" cols="50"></textarea>                </select>
+            </div>
+            <div class="form__item">
+                <div class="form__itemText">Захист від спаму*</div>
+                <input type="text" class="form__inp small">
+                <div class="form__captcha"></div>
+                <a href="#" class="form__link">Змінити зображення</a>
+            </div>
+            <div class="form__item">
+                <div class="form__itemText"></div>
+                <input type="submit" class="form__btn" value="Відправити">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
